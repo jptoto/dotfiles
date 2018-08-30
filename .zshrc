@@ -101,4 +101,5 @@ source $ZSH/oh-my-zsh.sh
 # JP's aliases
 alias zshconfig="code ~/.zshrc"
 alias ll="ls -all"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+alias tf="terraform"
+alias lz="lazygit"
