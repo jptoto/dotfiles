@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/$HOME/projects/gopath/bin:/usr/local/bin:/usr/local/opt/ncurses/bin:$PATH
+export PATH=$HOME/bin:/$HOME/projects/gopath/bin:/usr/local/bin:/usr/local/opt/ncurses/bin:/Applications/VMware\ OVF\ Tool:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/jtoto/.oh-my-zsh"
@@ -10,6 +10,12 @@ export GOPATH=$HOME/projects/gopath
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="powerlevel9k/powerlevel9k"
+
+# ZSH Tmux Settings
+ZSH_TMUX_AUTOSTART='true'
+
+# Midnight Commander Skin
+export MC_SKIN=$HOME/.config/mc/lib/mc-solarized-skin/solarized.ini
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
@@ -67,6 +73,8 @@ plugins=(
   git
   osx
   python
+  tmux
+  tmuxinator
 )
 
 source $ZSH/oh-my-zsh.sh
